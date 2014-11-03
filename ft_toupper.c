@@ -6,15 +6,13 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:35:04 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/03 14:04:37 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/03 15:19:14 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
 		return (c - 32);
-	}
-		else return (c);
+	return (c);
 }
