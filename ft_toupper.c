@@ -6,17 +6,15 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:35:04 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/03 13:48:50 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/03 14:04:37 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int ft_toupper(int c)
 {
-	if (c > 96 && c < 122)
+	if (c >= 'a' && c <= 'z')
 	{
-		c = c - 32;
+		return (c - 32);
 	}
-	return (c);
+		else return (c);
 }
