@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 23:36:22 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 00:07:22 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 09:13:38 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char *ft_strncpy(char *dst, const char *src, size_t n)
 	z = 0;
 	while (src[z])
 	{
-			dst[z] = src[z];
-			z++;
+		dst[z] = src[z];
+		z++;
 	}
 	if (n > ft_strlen(src))
 		while (dst[z])
@@ -28,5 +28,5 @@ char *ft_strncpy(char *dst, const char *src, size_t n)
 			dst[z] = '\0';
 			z++;
 		}
-		return (dst);
+	return (dst);
 }
