@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 00:30:18 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 09:55:17 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 09:59:48 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strdup(const char *s1)
 	return (ptr);
 }
 
-char	*ft_strcat(char *s1, char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int		i;
 	int		j;
