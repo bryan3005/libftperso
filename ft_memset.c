@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:45:00 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 15:09:05 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 17:27:41 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,4 @@ void	*ft_memset(void *b, int c, size_t len)
 		len--;
 	}
 	return (b);
-}
-
-int		main(void)
-{
-   char str[50];
-
-   strcpy(str,"This is string.h library function");
-   puts(str);
-
-   ft_memset(str,'$',7);
-   puts(str);
-   
-   return(0);
 }

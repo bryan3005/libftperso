@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:08:20 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 14:25:52 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 17:26:47 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,4 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 		n--;
 	}
 	return (NULL);
-}
-
-int		main(void)
-{
-   const char src[50] = "Bonjour";
-   char dest[50];
-
-  // printf("Before memcpy dest = %s\n", dest);
-  printf("%p\n",ft_memccpy(dest, src, 'x', 100));
-   printf("After memcpy dest = %s\n", dest);
-    return(0);
 }

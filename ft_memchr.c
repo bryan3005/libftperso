@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:19:31 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 16:43:35 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 17:27:24 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,4 @@ void *ft_memchr(const void *s, int c, size_t n)
 		n--;
 	}
 	return (NULL);
-}
-
-int main(void)
-{
-  char *str = "devientdouxlamasticot";
-    char search = 'x';
-   char *trys;
-
-   trys = memchr(str, search, strlen(str));
-
-   printf("String after |%c| is - |%s|\n", search, trys);
-
-   return(0);
 }
