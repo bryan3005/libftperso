@@ -6,13 +6,23 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 23:36:22 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 09:13:38 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 10:09:30 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
-char *ft_strncpy(char *dst, const char *src, size_t n)
+size_t	ft_strlen(const char *str)
+{
+	size_t i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+
+char	*ft_strncpy(char *dst, const char *src, size_t n)
 {
 	size_t z;
 

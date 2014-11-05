@@ -6,11 +6,9 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 23:13:42 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/04 23:28:18 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 10:05:51 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char *ft_strcpy(char *dst, const char *src)
 {
