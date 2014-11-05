@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:13:46 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 10:17:09 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/05 10:24:13 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,10 +64,4 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	}
 	s1[i] = '\0';
 	return (s1);
-}
-
-int main(void)
-{
-	printf("%s\n", ft_strncat("Bonjour","les amies",3) );
-	return (0);
 }
