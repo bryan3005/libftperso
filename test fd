@@ -1,0 +1,8 @@
+int		main(void)
+{
+	int fd;
+
+	fd = open("test", O_RDWR | O_CREAT);
+	ft_putchar_fd('o', fd);
+	return (0);
+}
