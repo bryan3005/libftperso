@@ -6,3 +6,12 @@ int		main(void)
 	ft_putchar_fd('o', fd);
 	return (0);
 }
+
+int		main(void)
+{
+	int	fd;
+
+	fd = open("test2", O_CREAT | O_RDWR);
+	ft_putstr_fd("bonjour les amis", fd);
+	return (0);
+}
