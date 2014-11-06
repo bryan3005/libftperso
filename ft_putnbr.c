@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 17:36:35 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/06 17:54:52 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/06 17:56:59 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,18 @@ void		ft_putchar(char c)
 
 void		ft_putnbr(int n)
 {
-	if (nb < 0)
+	if (n < 0)
 	{
 		ft_putchar('-');
-		nb = -nb;
+		n = -n;
 	}
-	if (nb >= 10)
+	if (n >= 10)
 	{
-		ft_putnbr(nb / 10);
-		ft_putchar('0' + (nb % 10));
+		ft_putnbr(n / 10);
+		ft_putchar('0' + (n % 10));
 	}
 	else
 	{
-		ft_putchar(nb + '0');
+		ft_putchar(n + '0');
 	}
 }
