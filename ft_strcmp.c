@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 16:17:04 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:44:06 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 11:24:15 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ int ft_strcmp(const char *s1, const char *s2)
 	int ret;
 
 	i = 0;
-	while (s1[i] == s2[i])
+	while (*((unsigned char *)s1 + i) == *((unsigned char *)s2 + i))
 	{
 		if (s1[i] == '\0')
 			return (0);
 		i++;
 	}
-	ret = s1[i] - s2[i];
+	ret = (int)*((unsigned char *)s1 + i) - *((unsigned char *)s2 + i);
 	return (ret);
 }

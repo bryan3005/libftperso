@@ -6,37 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 00:30:18 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:43:51 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 10:18:27 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	size_t i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-char	*ft_strdup(const char *s1)
-{
-	int		i;
-	char	*ptr;
-
-	i = 0;
-	ptr = (char *)malloc (ft_strlen(s1) * sizeof(char));
-	while (s1[i])
-	{
-		ptr[i] = s1[i];
-		i++;
-	}
-	ptr[i] = '\0';
-	return (ptr);
-}
 
 char	*ft_strcat(char *s1, const char *s2)
 {

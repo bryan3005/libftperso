@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:45:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 09:41:35 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 10:17:27 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
-
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

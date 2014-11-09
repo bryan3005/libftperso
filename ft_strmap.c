@@ -6,21 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 11:48:56 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:44:56 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 10:29:33 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	size_t i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

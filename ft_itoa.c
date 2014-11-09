@@ -6,13 +6,13 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 15:07:25 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:42:00 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 10:36:41 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_len(int n)
+int		ft_len2(int n)
 {
 	int len;
 
@@ -34,7 +34,7 @@ char	*ft_itoa(int n)
 	char	*ptr;
 	int		i;
 
-	i = ft_len(n) - 1;
+	i = ft_len2(n) - 1;
 	ptr = malloc(i + 1 * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:08:20 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:42:11 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:06:28 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		pchar2[i] = pchar1[i];
 		if (pchar2[i] == b)
-			return (dst);
+			return (dst + i + 1);
 		i++;
 		n--;
 	}
