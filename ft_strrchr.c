@@ -6,21 +6,19 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:18:53 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:45:33 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 09:47:15 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	int i;
+	size_t i;
 
 	i = 0;
-	while (str[i])
-	{
+	while (str[i] != '\0')
 		i++;
-	}
 	return (i);
 }
 

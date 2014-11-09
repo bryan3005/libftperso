@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:45:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:40:50 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 09:41:35 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 
 int		ft_atoi(const char *str);
-void	ft_bzero(char *str, size_t nb);
+void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
@@ -52,7 +52,7 @@ char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 void	ft_strdel(char **as);
-void	ft_strcl(char *s);
+void	ft_strclr(char *s);
 int		ft_strequ(char const *s1, char const *s2);
 void	ft_striter(char *s, void (*f)(char *));
 char	*ft_strnew(size_t size);

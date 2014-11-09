@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:57:11 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:41:04 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 09:35:54 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
+	size_t	i;
+	char	*str;
 
 	i = 0;
 	str = s;
