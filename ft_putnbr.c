@@ -6,10 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 17:36:35 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:33:26 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:24:54 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
 void		ft_putnbr(int n)

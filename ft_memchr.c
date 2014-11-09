@@ -6,11 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:19:31 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:53:20 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:12:57 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 void *ft_memchr(const void *s, int c, size_t n)
 {

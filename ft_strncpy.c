@@ -6,11 +6,12 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 23:36:22 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:06:55 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:30:58 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 char	*ft_strncpy(char *dst, const char *src, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 09:10:19 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:42:43 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:13:41 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 void	ft_memdel(void **ap)
 {

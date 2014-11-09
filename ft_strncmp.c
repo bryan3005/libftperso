@@ -6,11 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 16:34:21 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:45:09 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:30:45 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

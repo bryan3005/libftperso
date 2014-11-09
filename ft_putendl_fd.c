@@ -6,10 +6,12 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 17:28:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:33:11 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:24:37 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <fcntl.h>
+#include <unistd.h>
 #include "libft.h"
 
 void	ft_putendl_fd(char const *s, int fd)

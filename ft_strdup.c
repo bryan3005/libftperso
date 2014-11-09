@@ -6,11 +6,12 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:33:44 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:17:04 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:27:59 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strdup(const char *s1)
 {

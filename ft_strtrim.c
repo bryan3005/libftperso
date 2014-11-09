@@ -6,11 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 14:33:47 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:36:14 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:34:01 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 int		ft_len(const char *s)
 {

@@ -6,10 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 17:42:48 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:33:57 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:23:48 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr(char const *s)

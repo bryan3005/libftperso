@@ -6,11 +6,13 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 10:13:46 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:18:55 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:30:27 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <string.h>
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {

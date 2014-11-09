@@ -6,11 +6,12 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 00:30:18 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:18:27 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:25:49 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strcat(char *s1, const char *s2)
 {

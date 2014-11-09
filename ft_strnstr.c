@@ -6,11 +6,13 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:17:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 10:20:07 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:31:57 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <string.h>
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 {

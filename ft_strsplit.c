@@ -6,11 +6,12 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 09:56:06 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 01:45:38 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 12:32:37 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 int		ft_strslenmot(char const *s, char c)
 {
