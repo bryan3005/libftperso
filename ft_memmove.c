@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 08:39:28 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 13:42:56 by mbryan           ###   ########.fr       */
+/*   Created: 2014/11/09 13:51:30 by mbryan            #+#    #+#             */
+/*   Updated: 2014/11/09 14:03:42 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <string.h>
-#include "libft.h"
+#include <stdlib.h>
 
-void	*ft_memalloc(size_t size)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	void *memaloc;
+	size_t		i;
+	char		*pchar2;
+	char		*srccpy;
 
-	memaloc = (void *)malloc (size);
-	if (memaloc == NULL)
-		return (NULL);
-	ft_memset(memaloc, 0, size);
-	return (memaloc);
+	srccpy = (void *)src;
+	pchar2 = (char *)dst;
+	i = 0;
+	while (n > 0)
+	{
+		pchar2[i] = srccpy[i];
+		i++;
+		n--;
+	}
+	return (dst);
 }

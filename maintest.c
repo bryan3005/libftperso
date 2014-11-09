@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 19:30:29 by darresti          #+#    #+#             */
-/*   Updated: 2014/11/09 12:16:34 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 14:01:25 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -447,6 +447,23 @@ static void	test_memdel(void)
 	print_test_results(test, ctrl, 1);
 }
 
+static void	test_memmove(void)
+{
+	int		test[3], ctrl[3], n=6;
+	char	str1[]="abcdefghijklmnopqrstuvwxyz", str2[]="abcdefghijklmnopqrstuvwxyz",
+			str3[]="abcdefghijklmnopqrstuvwxyz", str4[]="abcdefghijklmnopqrstuvwxyz";
+
+	init(ctrl, 3, 0);
+	str1[n - 1] = '\0';
+	str2[n - 1] = '\0';
+	str3[n - 1] = '\0';
+	str4[n - 1] = '\0';
+	test[0] = strcmp(memmove(str1 + 1, str1, n), ft_memmove(str2 + 1, str2, n));
+	test[1] = strcmp(memmove(str3, str3 + 1, n), ft_memmove(str4, str4 + 1, n));
+	test[2] = strcmp(memmove(str1, str1, n), ft_memmove(str2, str2, n));
+	print_test_name("memmove");
+	print_test_results(test, ctrl, 3);
+}
 
 static void	test_memset(void)
 {
@@ -549,6 +566,7 @@ static void	test_strdup(void)
 	print_test_name("strdup");
 	print_test_results(test, ctrl, 2);
 }
+
 
 
 static void	test_strchr(void)
@@ -781,6 +799,7 @@ int			main(void)
 	test_memcmp();
 	test_memcpy();
 	test_memdel();
+	test_memmove();
 	test_memset();
 	test_strcat();
 	test_strchr();

@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:44:04 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:32:53 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 13:44:23 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strstr(const char *str1, const char *str2)
 {
 	int				i;
 	int				j;
-	unsigned char	*ptr;
+	char			*ptr;
 
 	i = 0;
 	j = 0;
