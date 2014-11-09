@@ -6,13 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 10:06:42 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/06 10:32:52 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 01:44:12 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_strdel(char **as)
 {

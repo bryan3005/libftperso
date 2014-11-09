@@ -6,12 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 11:39:12 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 17:27:31 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 01:42:36 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {

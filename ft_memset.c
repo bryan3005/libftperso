@@ -6,13 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:45:00 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/05 17:27:41 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 01:42:48 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

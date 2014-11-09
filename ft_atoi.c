@@ -6,9 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:29:10 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 00:07:31 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 01:40:52 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_atoi(const char *str)
 {

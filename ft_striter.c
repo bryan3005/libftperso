@@ -6,13 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 11:12:12 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/06 11:21:12 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 01:44:26 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {

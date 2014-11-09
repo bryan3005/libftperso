@@ -6,11 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:57:11 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/07 16:36:25 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 01:41:04 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
