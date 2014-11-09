@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:45:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:34:30 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/09 14:00:48 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string.h>
 
 int		ft_atoi(const char *str);
+void	*ft_memmove(void *dst, const void *src, size_t n);
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
