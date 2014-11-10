@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:33:44 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:27:59 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/10 10:16:51 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strdup(const char *s1)
 
 	i = 0;
 	ptr = (char *)malloc (ft_strlen(s1) * sizeof(char));
+	if (ptr == NULL)
+		return (NULL);
 	while (s1[i])
 	{
 		ptr[i] = s1[i];

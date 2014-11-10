@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 11:48:56 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:29:53 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/10 10:17:41 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 
 	i = 0;
 	ptr = malloc(ft_strlen(s) * sizeof(char));
+	if (ptr == NULL)
+		return (NULL);
 	while (s[i])
 	{
 		ptr[i] = f(s[i]);

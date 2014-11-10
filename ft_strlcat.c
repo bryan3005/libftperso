@@ -1,43 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 10:13:46 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/10 10:19:32 by mbryan           ###   ########.fr       */
+/*   Created: 2014/11/10 08:59:44 by mbryan            #+#    #+#             */
+/*   Updated: 2014/11/10 09:14:05 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 #include <string.h>
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	int		i;
-	int		j;
-	char	*ptr;
+	int		z;
+	size_t	ret;
 
-	i = 0;
-	j = 0;
-	ptr = ft_strdup(s1);
-	s1 = (char *)malloc ((ft_strlen(s1) + ft_strlen(s2)) * sizeof(char));
-	if (s1 == NULL)
-		return (NULL);
-	while (ptr[i])
+	if (ft_strlen(dst) >= size)
+		return (ft_strlen(src) + size);
+	ret = ft_strlen(dst) + ft_strlen(src);
+	while (dst[z])
+		z++;
+	while (src[i] && size - 1 - i - z > 0)
 	{
-		s1[i] = ptr[i];
+		dst[z + i] = src[i];
 		i++;
 	}
-	while (s2[j] && n > 0)
-	{
-		s1[i] = s2[j];
-		j++;
-		i++;
-		n--;
-	}
-	s1[i] = '\0';
-	return (s1);
+	dst[i + z] = '\0';
+	return (ret);
 }

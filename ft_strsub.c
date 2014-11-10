@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 13:57:55 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:33:36 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/10 09:56:59 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 		s++;
 		start--;
 	}
+	ptr[len] = '\0';
 	while (len > 0)
 	{
 		ptr[i] = s[i];

@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:45:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 14:00:48 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/10 10:56:10 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,17 @@ int		ft_isalnum(int c);
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
-int 	ft_isdigit(int c);
+int		ft_isdigit(int c);
 int		ft_isprint(int c);
 char	*ft_itoa(int n);
 void	*ft_memalloc(size_t size);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
-void 	*ft_memchr(const void *s, int c, size_t n);
-int 	ft_memcmp(const void *s1, const void *s2, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	ft_memdel(void **ap);
 void	*ft_memset(void *b, int c, size_t len);
-void 	ft_putchar(char c);
+void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl(const char *s);
 void	ft_putendl_fd(char const *s, int fd);
@@ -42,7 +42,7 @@ void	ft_putstr(char const *s);
 void	ft_putstr_fd(char const *s, int fd);
 char	*ft_strcat(char *s1, const char *s2);
 void	ft_strcl(char *s);
-char 	*ft_strcpy(char *dst, const char *src);
+char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
@@ -54,6 +54,7 @@ void	ft_striter(char *s, void (*f)(char *));
 char	*ft_strnew(size_t size);
 char	*ft_strtrim(char const *s);
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_strsplit(char const *s, char c);
 char	*ft_strmap(char const *s, char (*f)(char));

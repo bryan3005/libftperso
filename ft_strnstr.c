@@ -6,12 +6,11 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:17:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 12:31:57 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/10 10:48:09 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 #include <string.h>
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t n)
@@ -22,12 +21,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t n)
 
 	i = 0;
 	j = 0;
-	ptr = (char *)malloc (ft_strlen(str1) * sizeof(char));
-	while (str1[i])
-	{
-		ptr[i] = str1[i];
-		i++;
-	}
+	ptr = ft_strdup(str1);
 	i = 0;
 	while (str1[i] && i < n)
 	{

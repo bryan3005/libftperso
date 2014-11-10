@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 10:44:04 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/09 13:44:23 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/10 10:48:17 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,12 @@ char	*ft_strstr(const char *str1, const char *str2)
 	i = 0;
 	j = 0;
 	ptr = ft_strdup(str1);
+	while (str1[i])
+	{
+		ptr[i] = str1[i];
+		i++;
+	}
+	i = 0;
 	while (ptr[i])
 	{
 		while (ptr[i + j] == str2[j])
