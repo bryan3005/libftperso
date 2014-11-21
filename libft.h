@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:45:37 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/21 10:48:07 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/11/21 13:21:06 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+t_list				*ft_lstnew(void const *content, size_t content_size);
 int					ft_atoi(const char *str);
 void				*ft_memmove(void *dst, const void *src, size_t n);
 void				ft_bzero(void *s, size_t n);
