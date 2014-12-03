@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 15:07:25 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/17 14:40:02 by mbryan           ###   ########.fr       */
+/*   Updated: 2014/12/03 16:47:27 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ char	*ft_itoa(int n)
 	int		i;
 
 	i = ft_len2(n);
-	ptr = malloc_me(i);
+	if ((ptr = malloc_me(i)) == NULL)
+		return (NULL);
 	if (n == -2147483648)
 		return ("-2147483648");
 	if (n == 0)
@@ -60,7 +61,6 @@ char	*ft_itoa(int n)
 	{
 		ptr[0] = ('-');
 		n = -n;
-		i++;
 	}
 	while (n >= 10)
 	{
