@@ -1,44 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 14:14:28 by mbryan            #+#    #+#             */
-/*   Updated: 2015/01/05 12:29:17 by mbryan           ###   ########.fr       */
+/*   Created: 2015/01/05 15:20:38 by mbryan            #+#    #+#             */
+/*   Updated: 2015/01/05 16:37:54 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-#include <string.h>
 
-char		*ft_strjoin(char const *s1, char const *s2)
+void	ft_lstdelone(t_list **alst, void (*del)(void*, size_t))
 {
-	size_t	i;
-	size_t	z;
-	char	*ptr;
-
-	if (!s1 || !s2)
-		return (NULL);
-	z = 0;
-	i = ft_strlen(s1) + ft_strlen(s2) + 1;
-	ptr = malloc(i * sizeof(char));
-	if (ptr == NULL)
-		return (NULL);
-	while (s1[z])
-	{
-		ptr[z] = s1[z];
-		z++;
-	}
-	i = 0;
-	while (s2[i])
-	{
-		ptr[z] = s2[i];
-		z++;
-		i++;
-	}
-	ptr[z] = '\0';
-	return (ptr);
+	if (!alst || !*alst || !del)
+		return ;
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = NULL;
+	alst = NULL;
 }

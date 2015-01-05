@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 15:07:25 by mbryan            #+#    #+#             */
-/*   Updated: 2014/12/03 16:47:27 by mbryan           ###   ########.fr       */
+/*   Updated: 2015/01/05 12:29:36 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,7 @@ char	*ft_itoa(int n)
 	int		i;
 
 	i = ft_len2(n);
-	if ((ptr = malloc_me(i)) == NULL)
-		return (NULL);
+	ptr = malloc_me(i);
 	if (n == -2147483648)
 		return ("-2147483648");
 	if (n == 0)

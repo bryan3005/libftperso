@@ -1,44 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 14:14:28 by mbryan            #+#    #+#             */
-/*   Updated: 2015/01/05 12:29:17 by mbryan           ###   ########.fr       */
+/*   Created: 2015/01/05 16:04:10 by mbryan            #+#    #+#             */
+/*   Updated: 2015/01/05 16:38:16 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-#include <string.h>
 
-char		*ft_strjoin(char const *s1, char const *s2)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	size_t	i;
-	size_t	z;
-	char	*ptr;
+	t_list	*new_first_one;
+	t_list	*new;
+	t_list	*old_one;
 
-	if (!s1 || !s2)
+	if (!lst || !f)
 		return (NULL);
-	z = 0;
-	i = ft_strlen(s1) + ft_strlen(s2) + 1;
-	ptr = malloc(i * sizeof(char));
-	if (ptr == NULL)
+	if ((new = (t_list *)malloc(sizeof(t_list))) == NULL)
 		return (NULL);
-	while (s1[z])
+	new = f(lst);
+	new_first_one = new;
+	while (lst->next != NULL)
 	{
-		ptr[z] = s1[z];
-		z++;
+		old_one = new;
+		lst = lst->next;
+		if ((new = (t_list *)malloc(sizeof(t_list))) == NULL)
+			return (NULL);
+		new = f(lst);
+		old_one->next = new;
 	}
-	i = 0;
-	while (s2[i])
-	{
-		ptr[z] = s2[i];
-		z++;
-		i++;
-	}
-	ptr[z] = '\0';
-	return (ptr);
+	return (new_first_one);
 }

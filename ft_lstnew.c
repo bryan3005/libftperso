@@ -1,44 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 14:14:28 by mbryan            #+#    #+#             */
-/*   Updated: 2015/01/05 12:29:17 by mbryan           ###   ########.fr       */
+/*   Created: 2015/01/05 15:05:34 by mbryan            #+#    #+#             */
+/*   Updated: 2015/01/05 16:39:02 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
-#include <string.h>
 
-char		*ft_strjoin(char const *s1, char const *s2)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	size_t	i;
-	size_t	z;
-	char	*ptr;
+	t_list	*new;
 
-	if (!s1 || !s2)
+	if ((new = (t_list *)malloc(sizeof(t_list))) == NULL)
 		return (NULL);
-	z = 0;
-	i = ft_strlen(s1) + ft_strlen(s2) + 1;
-	ptr = malloc(i * sizeof(char));
-	if (ptr == NULL)
+	if (content == NULL)
+	{
+		new->content = NULL;
+		content_size = 0;
+	}
+	if ((new->content = malloc(content_size)) == NULL)
 		return (NULL);
-	while (s1[z])
-	{
-		ptr[z] = s1[z];
-		z++;
-	}
-	i = 0;
-	while (s2[i])
-	{
-		ptr[z] = s2[i];
-		z++;
-		i++;
-	}
-	ptr[z] = '\0';
-	return (ptr);
+	new->content_size = content_size;
+	new->next = NULL;
+	if (content != NULL)
+		ft_memmove(new->content, content, content_size);
+	return (new);
 }

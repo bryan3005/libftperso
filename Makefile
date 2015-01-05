@@ -6,7 +6,7 @@
 #    By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/09 13:04:36 by mbryan            #+#    #+#              #
-#    Updated: 2014/11/25 15:39:11 by mbryan           ###   ########.fr        #
+#    Updated: 2015/01/05 16:58:57 by mbryan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,9 @@ SRC = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 	  ft_strequ.c ft_striter.c ft_striteri.c ft_strjoin.c ft_strlen.c \
 	  ft_strmap.c ft_strmapi.c ft_strncat.c ft_strncmp.c ft_strncpy.c \
 	  ft_strnequ.c ft_strnew.c ft_strnstr.c ft_strrchr.c ft_strsplit.c \
-	  ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
+	  ft_strstr.c ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c \
+	  ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
+	  ft_lstmap.c 
 
 OBJ = $(SRC:.c=.o)
 
@@ -31,7 +33,7 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME):
-	gcc $(FLAG) -c $(SRC) -I ./includes
+	gcc $(FLAG) -c $(SRC) -I ./
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 

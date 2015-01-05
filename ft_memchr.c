@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:19:31 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/17 11:48:07 by mbryan           ###   ########.fr       */
+/*   Updated: 2015/01/05 11:54:51 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void *ft_memchr(const void *s, int c, size_t n)
 	int				i;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	d = (unsigned char)c;
 	q = (unsigned char *)s;
 	while (n > 0)

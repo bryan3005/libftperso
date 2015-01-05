@@ -6,11 +6,10 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 09:56:06 by mbryan            #+#    #+#             */
-/*   Updated: 2014/11/17 08:39:53 by mbryan           ###   ########.fr       */
+/*   Updated: 2015/01/05 14:06:28 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <stdlib.h>
 
 int		ft_strslenmot(char const *s, char c)
@@ -79,9 +78,8 @@ char	**mallop(char const *s, char c)
 	return (cpy);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char	**make_it2(char **cpy, char const *s, char c)
 {
-	char	**cpy;
 	int		i;
 	int		j;
 	int		e;
@@ -89,7 +87,6 @@ char	**ft_strsplit(char const *s, char c)
 	j = 0;
 	i = 0;
 	e = 0;
-	cpy = mallop(s, c);
 	while (s[e])
 	{
 		while (s[e] == c && s[e])
@@ -105,5 +102,18 @@ char	**ft_strsplit(char const *s, char c)
 		j = 0;
 		i++;
 	}
+	return (cpy);
+}
+
+char	**ft_strsplit(char const *s, char c)
+{
+	char	**cpy;
+
+	if (s == NULL)
+		return (NULL);
+	cpy = mallop(s, c);
+	if (cpy == NULL)
+		return (NULL);
+	make_it2(cpy, s, c);
 	return (cpy);
 }
