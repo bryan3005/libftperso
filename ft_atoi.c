@@ -6,12 +6,12 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:29:10 by mbryan            #+#    #+#             */
-/*   Updated: 2015/01/05 14:53:10 by mbryan           ###   ########.fr       */
+/*   Updated: 2015/01/07 09:46:21 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <libft.h>
+#include "libft.h"
 
 int make_it3(const char *str)
 {
