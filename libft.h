@@ -6,7 +6,7 @@
 /*   By: mbryan <mbryan@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:45:37 by mbryan            #+#    #+#             */
-/*   Updated: 2015/01/05 16:46:52 by mbryan           ###   ########.fr       */
+/*   Updated: 2015/01/06 17:15:53 by mbryan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+int					ft_is_space(char c);
+size_t				ft_intlen(int n);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
